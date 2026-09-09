@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>柚子漫画-柚子漫画在线观看与阅读指南</title>
+    <meta name="description" content="柚子漫画是一个专注于提供高质量漫画阅读体验的平台，涵盖日漫、国漫、韩漫等多种类型。本页为您详细介绍柚子漫画的特点、阅读方法、分类导航以及常见问题，帮助您快速找到心仪的作品。">
+    <meta name="keywords" content="柚子漫画,漫画阅读,在线漫画,日漫,国漫,韩漫,漫画推荐,柚子漫画官网">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            background-color: #f8f9fa;
+            color: #212529;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* 页眉 */
+        .site-header {
+            background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .brand-icon {
+            width: 48px;
+            height: 48px;
+            background-color: #e8590c;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            color: white;
+            box-shadow: 0 4px 8px rgba(232, 89, 12, 0.3);
+        }
+
+        .brand-name {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #2b2b2b;
+            letter-spacing: 1px;
+        }
+
+        .brand-tagline {
+            font-size: 0.9rem;
+            color: #5c4d3c;
+        }
+
+        /* 导航 */
+        .main-nav {
+            background: #fff;
+            border-bottom: 1px solid #eee;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .nav-list {
+            display: flex;
+            list-style: none;
+            overflow-x: auto;
+            padding: 0;
+        }
+
+        .nav-list li {
+            flex-shrink: 0;
+        }
+
+        .nav-list a {
+            display: block;
+            padding: 14px 20px;
+            text-decoration: none;
+            color: #495057;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border-bottom: 3px solid transparent;
+        }
+
+        .nav-list a:hover,
+        .nav-list a.active {
+            color: #e8590c;
+            border-bottom-color: #e8590c;
+            background-color: rgba(232, 89, 12, 0.05);
+        }
+
+        /* 首屏 */
+        .hero {
+            background: linear-gradient(to right, #fff5f0, #ffe8e0);
+            padding: 60px 0;
+            text-align: center;
+            border-bottom: 1px solid #f0e0d8;
+        }
+
+        .hero h1 {
+            font-size: 2.6rem;
+            margin-bottom: 16px;
+            color: #2b2b2b;
+            font-weight: 800;
+        }
+
+        .hero p {
+            font-size: 1.15rem;
+            color: #5c4d3c;
+            max-width: 720px;
+            margin: 0 auto 30px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            border-radius: 30px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .btn-primary {
+            background-color: #e8590c;
+            color: white;
+            box-shadow: 0 4px 12px rgba(232, 89, 12, 0.3);
+        }
+
+        .btn-primary:hover {
+            background-color: #d9480f;
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            background: transparent;
+            border-color: #e8590c;
+            color: #e8590c;
+        }
+
+        .btn-outline:hover {
+            background-color: #e8590c;
+            color: white;
+        }
+
+        /* 区块通用 */
+        .section {
+            padding: 60px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: #2b2b2b;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: #6c757d;
+            margin-bottom: 40px;
+            font-size: 1rem;
+        }
+
+        /* 分类卡片 */
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 24px;
+        }
+
+        .category-card {
+            background: white;
+            border-radius: 16px;
+            padding: 30px 24px;
+            text-align: center;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+            transition: all 0.3s ease;
+            border: 1px solid #f0f0f0;
+        }
+
+        .category-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+            border-color: #fda085;
+        }
+
+        .category-icon {
+            font-size: 3rem;
+            margin-bottom: 16px;
+        }
+
+        .category-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: #343a40;
+        }
+
+        .category-card p {
+            color: #6c757d;
+            font-size: 0.95rem;
+        }
+
+        /* 内容介绍区 */
+        .about-section {
+            background: white;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .about-text h3 {
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+            color: #2b2b2b;
+        }
+
+        .about-text p {
+            margin-bottom: 16px;
+            color: #495057;
+        }
+
+        .about-features {
+            list-style: none;
+            padding: 0;
+        }
+
+        .about-features li {
+            padding: 10px 0;
+            border-bottom: 1px dashed #e9ecef;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .about-features li:last-child {
+            border-bottom: none;
+        }
+
+        .feature-icon {
+            color: #e8590c;
+            font-weight: bold;
+        }
+
+        /* 阅读步骤 */
+        .steps-section {
+            background: #f8f9fa;
+        }
+
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+            counter-reset: step;
+        }
+
+        .step-item {
+            text-align: center;
+            padding: 30px 20px;
+            background: white;
+            border-radius: 16px;
+            position: relative;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+
+        .step-number {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #f6d365, #fda085);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: white;
+            margin: 0 auto 20px;
+        }
+
+        .step-item h3 {
+            font-size: 1.15rem;
+            margin-bottom: 12px;
+            color: #343a40;
+        }
+
+        .step-item p {
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+
+        /* 热门推荐 */
+        .popular-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+        }
+
+        .popular-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+            transition: transform 0.3s ease;
+        }
+
+        .popular-card:hover {
+            transform: scale(1.02);
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .card-tag {
+            display: inline-block;
+            background: #fff3e6;
+            color: #e8590c;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .card-body h3 {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: #343a40;
+        }
+
+        .card-body p {
+            color: #6c757d;
+            font-size: 0.9rem;
+            margin-bottom: 12px;
+        }
+
+        .card-meta {
+            font-size: 0.8rem;
+            color: #adb5bd;
+        }
+
+        /* 注意事项 */
+        .notice-section {
+            background: #fff5f0;
+        }
+
+        .notice-box {
+            background: white;
+            border-left: 5px solid #e8590c;
+            border-radius: 0 12px 12px 0;
+            padding: 24px 30px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .notice-box h3 {
+            color: #e8590c;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        .notice-box ul {
+            padding-left: 20px;
+            color: #495057;
+        }
+
+        .notice-box li {
+            margin-bottom: 8px;
+        }
+
+        /* FAQ */
+        .faq-section {
+            background: white;
+        }
+
+        .faq-list {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            border: 1px solid #e9ecef;
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin-bottom: 16px;
+            transition: border-color 0.3s;
+        }
+
+        .faq-item:hover {
+            border-color: #fda085;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            color: #343a40;
+            margin-bottom: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: default;
+        }
+
+        .faq-answer {
+            color: #6c757d;
+            font-size: 0.95rem;
+        }
+
+        /* 页脚 */
+        .site-footer {
+            background: #2b2b2b;
+            color: #adb5bd;
+            padding: 40px 0 20px;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .footer-brand {
+            font-size: 1.4rem;
+            color: white;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .footer-links a {
+            color: #ced4da;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .footer-links a:hover {
+            color: #fda085;
+        }
+
+        .copyright {
+            font-size: 0.85rem;
+            margin-top: 10px;
+            border-top: 1px solid #495057;
+            padding-top: 20px;
+            width: 100%;
+        }
+
+        /* 响应式 */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .section {
+                padding: 40px 0;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .section-title {
+                font-size: 1.6rem;
+            }
+
+            .brand-name {
+                font-size: 1.4rem;
+            }
+
+            .brand-tagline {
+                font-size: 0.8rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 15px;
+            }
+
+            .hero {
+                padding: 40px 0;
+            }
+
+            .hero h1 {
+                font-size: 1.7rem;
+            }
+
+            .btn {
+                padding: 10px 20px;
+                font-size: 0.9rem;
+            }
+
+            .category-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .steps-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .popular-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-links {
+                gap: 12px;
+            }
+        }
+    </style>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container header-inner">
+        <div class="brand">
+            <div class="brand-icon">🍊</div>
+            <div>
+                <div class="brand-name">柚子漫画</div>
+                <div class="brand-tagline">清新阅读 · 畅享漫画世界</div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<nav class="main-nav">
+    <div class="container">
+        <ul class="nav-list">
+            <li><a href="#" class="active">首页</a></li>
+            <li><a href="#">日漫</a></li>
+            <li><a href="#">国漫</a></li>
+            <li><a href="#">韩漫</a></li>
+            <li><a href="#">热门排行榜</a></li>
+            <li><a href="#">新作速递</a></li>
+            <li><a href="#">阅读指南</a></li>
+        </ul>
+    </div>
+</nav>
+
+<main>
+    <!-- 首屏 -->
+    <section class="hero">
+        <div class="container">
+            <h1>柚子漫画</h1>
+            <p>柚子漫画是一个以清新、多元为特色的漫画阅读平台。无论您是喜欢热血日漫、唯美国漫，还是精彩韩漫，这里都能为您提供流畅、舒适的在线阅读体验。每天更新，让好故事不再等待。</p>
+            <div class="hero-buttons">
+                <a href="#" class="btn btn-primary">开始阅读</a>
+                <a href="#" class="btn btn-outline">浏览分类</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 漫画分类 -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">丰富分类，总有你的心头好</h2>
+            <p class="section-subtitle">柚子漫画汇集了来自不同国家和风格的漫画作品，满足各类读者的口味</p>
+            <div class="category-grid">
+                <div class="category-card">
+                    <div class="category-icon">🗾</div>
+                    <h3>日漫</h3>
+                    <p>经典热血、治愈日常、奇幻冒险，海量日本漫画资源，同步更新热门连载。</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🇨🇳</div>
+                    <h3>国漫</h3>
+                    <p>支持优秀国产漫画，从古风玄幻到现代都市，感受本土创作的独特魅力。</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🇰🇷</div>
+                    <h3>韩漫</h3>
+                    <p>精美彩漫、剧情扎实，韩漫专区为您呈现高质量的条漫作品。</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">📚</div>
+                    <h3>完结佳作</h3>
+                    <p>完整收录经典完结作品，一次看过瘾，不用苦等更新。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 平台介绍 -->
+    <section class="section about-section">
+        <div class="container">
+            <h2 class="section-title">为什么选择柚子漫画？</h2>
+            <p class="section-subtitle">我们致力于打造一个让读者安心、舒适、沉浸的漫画阅读空间</p>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>为读者而生的阅读体验</h3>
+                    <p>柚子漫画从读者角度出发，不断优化阅读界面与交互流程。简洁干净的排版、智能的章节记忆、流畅的翻页效果，让您专注于故事本身。</p>
+                    <p>我们深知每一位漫画爱好者对作品品质的追求，因此对收录内容进行严格筛选与校对，力求画面清晰、翻译准确，呈现原汁原味的作品。</p>
+                    <ul class="about-features">
+                        <li><span class="feature-icon">✓</span> 界面清爽，无干扰阅读模式</li>
+                        <li><span class="feature-icon">✓</span> 多端适配，手机/平板/电脑无缝衔接</li>
+                        <li><span class="feature-icon">✓</span> 智能记录阅读进度，随时继续</li>
+                        <li><span class="feature-icon">✓</span> 每日更新，热门新作抢先看</li>
+                        <li><span class="feature-icon">✓</span> 免费为主，部分内容提供多种阅读选择</li>
+                    </ul>
+                </div>
+                <div class="about-text">
+                    <h3>一个温暖的漫画社区</h3>
+                    <p>柚子漫画不仅是一个阅读工具，更是一个让同好交流分享的地方。您可以在每部作品下留言讨论剧情，也可以查看其他读者的推荐书单，发现更多宝藏漫画。</p>
+                    <p>无论您是资深漫迷还是刚入坑的新手，都能在这里找到属于自己的乐趣。我们相信，好的漫画值得被更多人看见，也期待与您一起见证更多精彩故事。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 阅读步骤 -->
+    <section class="section steps-section">
+        <div class="container">
+            <h2 class="section-title">三步开启您的漫画之旅</h2>
+            <p class="section-subtitle">简单三步，马上沉浸在精彩的漫画世界里</p>
+            <div class="steps-grid">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <h3>浏览或搜索</h3>
+                    <p>通过分类导航、排行榜或搜索框，找到您感兴趣的漫画作品。</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <h3>点击进入详情</h3>
+                    <p>查看漫画简介、章节列表、读者评分与评论，了解作品基本情况。</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <h3>开始阅读</h3>
+                    <p>选择章节进入阅读模式，系统会自动保存您的阅读进度，方便下次继续。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 热门作品参考 -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">人气作品参考</h2>
+            <p class="section-subtitle">以下是根据读者关注度整理的部分热门类型，具体作品请在站内搜索查看</p>
+            <div class="popular-grid">
+                <div class="popular-card">
+                    <div class="card-body">
+                        <span class="card-tag">热血冒险</span>
+                        <h3>少年成长类</h3>
+                        <p>讲述主角不断挑战自我、结识伙伴、守护重要之人的故事，充满燃点与感动。</p>
+                        <div class="card-meta">热度持续 · 多部作品可选</div>
+                    </div>
+                </div>
+                <div class="popular-card">
+                    <div class="card-body">
+                        <span class="card-tag">甜蜜恋爱</span>
+                        <h3>恋爱日常类</h3>
+                        <p>细腻的情感描写、温馨的日常互动，让人心跳加速的浪漫故事汇集地。</p>
+                        <div class="card-meta">治愈系 · 轻松阅读</div>
+                    </div>
+                </div>
+                <div class="popular-card">
+                    <div class="card-body">
+                        <span class="card-tag">奇幻异界</span>
+                        <h3>穿越玄幻类</h3>
+                        <p>异世界冒险、系统流、重生逆袭，脑洞大开的设定满足您的想象力。</p>
+                        <div class="card-meta">设定新颖 · 剧情紧凑</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 注意事项 -->
+    <section class="section notice-section">
+        <div class="container">
+            <h2 class="section-title">阅读须知与温馨提示</h2>
+            <p class="section-subtitle">为了让您拥有更好的阅读体验，请留意以下事项</p>
+            <div class="notice-box">
+                <h3>📖 合理安排阅读时间</h3>
+                <ul>
+                    <li>漫画虽好看，也请注意适当休息，保护视力健康。</li>
+                    <li>建议开启阅读提醒功能，避免长时间沉浸忘记时间。</li>
+                </ul>
+            </div>
+            <div class="notice-box">
+                <h3>🔒 关于作品版权</h3>
+                <ul>
+                    <li>柚子漫画尊重每一位创作者的劳动成果，支持正版阅读。</li>
+                    <li>站内部分内容为试读或推广用途，请读者支持官方正版渠道。</li>
+                </ul>
+            </div>
+            <div class="notice-box">
+                <h3>💬 和谐交流社区氛围</h3>
+                <ul>
+                    <li>评论区请文明用语，理性讨论剧情与角色。</li>
+                    <li>禁止发布广告、引流、人身攻击等违规内容，共同维护良好环境。</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 常见问题 FAQ -->
+    <section class="section faq-section">
+        <div class="container">
+            <h2 class="section-title">常见问题解答</h2>
+            <p class="section-subtitle">关于柚子漫画，您可能想了解这些</p>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">Q：柚子漫画需要下载客户端吗？</div>
+                    <div class="faq-answer">A：不需要。柚子漫画支持网页端直接访问阅读，无需下载任何软件。同时页面针对手机、平板进行了适配，您可以直接在浏览器中使用，随时随地享受阅读。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Q：在柚子漫画上阅读是否收费？</div>
+                    <div class="faq-answer">A：柚子漫画提供大量免费漫画供读者阅读。部分作品或章节可能会根据版权方要求采取特定阅读方式，具体以页面提示为准。我们始终致力于让读者以最便捷的方式接触好作品。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Q：如何查找我想看的某部特定漫画？</div>
+                    <div class="faq-answer">A：您可以使用页面顶部的搜索功能，输入漫画名称或作者名进行查找。如果站内暂时没有收录，也欢迎通过反馈渠道告诉我们，我们会酌情评估添加。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Q：阅读记录会同步吗？换设备怎么办？</div>
+                    <div class="faq-answer">A：如果您使用同一账号在不同设备上登录，阅读记录和历史进度会自动同步。建议阅读前登录账号，以便保存您的个人书架与历史。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Q：遇到图片加载失败或页面显示异常怎么办？</div>
+                    <div class="faq-answer">A：建议您先尝试刷新页面或更换网络环境。如果问题依旧存在，可以尝试清除浏览器缓存或更换浏览器访问。同时欢迎联系站内客服反馈具体情况，我们会尽快处理。</div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-content">
+        <div class="footer-brand">🍊 柚子漫画</div>
+        <div class="footer-links">
+            <a href="#">关于我们</a>
+            <a href="#">帮助中心</a>
+            <a href="#">版权声明</a>
+            <a href="#">意见反馈</a>
+            <a href="#">友情链接</a>
+        </div>
+        <div class="copyright">
+            <p>本页面仅为风格展示与功能演示，所有内容均为虚构或示意。请支持正版漫画，尊重创作者版权。</p>
+            <p style="margin-top: 8px;">© 2024 柚子漫画 保留所有权利</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+      </html>
